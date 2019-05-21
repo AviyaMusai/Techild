@@ -40,9 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LessonDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SubjectDto.cs" />
     <Compile Include="TestsDto.cs" />
+    <Compile Include="UsersDto.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

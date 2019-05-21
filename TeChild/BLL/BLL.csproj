@@ -43,9 +43,11 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Class2.cs" />
+    <Compile Include="LessonsLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SubjectLogic.cs" />
     <Compile Include="TestsLogic.cs" />
+    <Compile Include="UserLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
