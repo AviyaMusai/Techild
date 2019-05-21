@@ -31,9 +31,17 @@ namespace BLL
         }
         //בדיקה תקינות
         // בעת רישום בדיקה האם משתמש קיים במערכת
-        public static bool IsExist(string mail)
+        public static bool IsExistSignup(string mail)
         {
             var q = db.Users.Where(u => u.mail == mail).Select(i=>i.mail).FirstOrDefault();
+            if (q != null)
+                return true;
+            return false;
+        }
+        //בעת כניסה בדיקה האם משתמש קיים במערכת
+        public static bool IsExistSignin(string pass)
+        {
+            var q = db.Users.Where(u => u.password == pass).Select(i => i.password).FirstOrDefault();
             if (q != null)
                 return true;
             return false;
