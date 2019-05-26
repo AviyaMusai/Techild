@@ -27,7 +27,7 @@ namespace BLL
         {
             List<ProgressDto> p = new List<ProgressDto>();
             var progress = from pro in db.Progress
-                           where pro.userId == userId&&
+                           where pro.userId == userId &&
                            pro.lessonAndSubjectId.Equals(subId)
                            select pro;
             foreach (var item in progress)

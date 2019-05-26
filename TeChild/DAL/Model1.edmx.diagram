@@ -9,7 +9,7 @@
         <EntityTypeShape EntityType="TechildDBModel.Progress" Width="1.5" PointX="9.125" PointY="4.5" IsExpanded="true" />
         <EntityTypeShape EntityType="TechildDBModel.Subjects" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
         <EntityTypeShape EntityType="TechildDBModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="TechildDBModel.Tests" Width="1.5" PointX="7.125" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TechildDBModel.Tests" Width="1.5" PointX="7.5" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="TechildDBModel.Users" Width="1.5" PointX="5.375" PointY="4.125" IsExpanded="true" />
         <AssociationConnector Association="TechildDBModel.FK_Lessons_Subjects" ManuallyRouted="false" />
         <AssociationConnector Association="TechildDBModel.FK_Progress_Lessons" ManuallyRouted="false" />
