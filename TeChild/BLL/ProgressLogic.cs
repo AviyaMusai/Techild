@@ -26,9 +26,10 @@ namespace BLL
         public static List<ProgressDto> GetProgressByUserIdAndSubjectid(int userId,int subId)
         {
             List<ProgressDto> p = new List<ProgressDto>();
-            var progress = from pro in db.Progress
+            var progress = from pro in db.Progress join m in db.Lessons
+                           on pro.lessonAndSubjectId equals m.id                   
                            where pro.userId == userId &&
-                           pro.lessonAndSubjectId.Equals(subId)
+                           m.subjectId==subId
                            select pro;
             foreach (var item in progress)
             {
