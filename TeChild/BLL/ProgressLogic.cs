@@ -8,7 +8,7 @@ namespace BLL
 {
   public class ProgressLogic
     {
-        public static DAL.TechildDBEntities db = new DAL.TechildDBEntities();
+        public static DAL.TechildDBEntities1 db = new DAL.TechildDBEntities1();
         //החזרת כל ההתקדמויות של משתמש לפי קוד משתמש
         public static List<ProgressDto> GetProgressByUserId(int userId)
         {

@@ -17,7 +17,6 @@ C:\Users\User\Documents\GitHub\Techild\TeChild\BLL\bin\Debug\Dto.dll
 C:\Users\User\Documents\GitHub\Techild\TeChild\BLL\bin\Debug\DAL.pdb
 C:\Users\User\Documents\GitHub\Techild\TeChild\BLL\bin\Debug\DAL.dll.config
 C:\Users\User\Documents\GitHub\Techild\TeChild\BLL\bin\Debug\Dto.pdb
-C:\Users\User\Documents\GitHub\Techild\TeChild\BLL\bin\Debug\EntityFramework.xml
 C:\Users\User\Documents\GitHub\Techild\TeChild\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\GitHub\Techild\TeChild\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 C:\Users\User\Documents\GitHub\Techild\TeChild\BLL\obj\Debug\BLL.dll

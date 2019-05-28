@@ -13,10 +13,10 @@ namespace DAL
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class TechildDBEntities : DbContext
+    public partial class TechildDBEntities1 : DbContext
     {
-        public TechildDBEntities()
-            : base("name=TechildDBEntities")
+        public TechildDBEntities1()
+            : base("name=TechildDBEntities1")
         {
         }
     
@@ -28,7 +28,6 @@ namespace DAL
         public virtual DbSet<Lessons> Lessons { get; set; }
         public virtual DbSet<Progress> Progress { get; set; }
         public virtual DbSet<Subjects> Subjects { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Tests> Tests { get; set; }
         public virtual DbSet<Users> Users { get; set; }
     }

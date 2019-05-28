@@ -10,7 +10,7 @@ namespace BLL
    
     public class SubjectLogic
     {
-        public static DAL.TechildDBEntities db = new DAL.TechildDBEntities();
+        public static DAL.TechildDBEntities1 db = new DAL.TechildDBEntities1();
         public static List<SubjectDto> GetAllSubject()
         {
             List<SubjectDto> subjectsDto = new List<SubjectDto>();

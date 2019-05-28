@@ -9,7 +9,7 @@ namespace BLL
 {
     public class UserLogic
     {
-        public static DAL.TechildDBEntities db = new DAL.TechildDBEntities();
+        public static DAL.TechildDBEntities1 db = new DAL.TechildDBEntities1();
         //החזרת רשימת כל המשתמשים
         public static List<UsersDto> GetAllUsers()
         {

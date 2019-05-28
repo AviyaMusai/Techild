@@ -8,7 +8,7 @@ namespace BLL
 {
    public class LessonsLogic
     {
-        public static DAL.TechildDBEntities db = new DAL.TechildDBEntities();
+        public static DAL.TechildDBEntities1 db = new DAL.TechildDBEntities1();
         //מחזיר רשימה של שיעורים מסוג DTO
         public static List<LessonDto> GetAllLessons()
         {

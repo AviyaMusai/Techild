@@ -6,7 +6,7 @@
     </Key>
     <Property Name="subjectId" Type="Int32" Nullable="false" />
     <Property Name="lessonId" Type="Int32" Nullable="false" />
-    <Property Name="lessonName" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="lessonName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="lessonFile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <NavigationProperty Name="Subjects" Relationship="Self.FK_Lessons_Subjects" FromRole="Lessons" ToRole="Subjects" />
@@ -31,18 +31,8 @@
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="Lessons" Relationship="Self.FK_Lessons_Subjects" FromRole="Subjects" ToRole="Lessons" />
-  </EntityType>
-  <EntityType Name="sysdiagrams">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="principal_id" Type="Int32" Nullable="false" />
-    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="Int32" />
-    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
   <EntityType Name="Tests">
     <Key>
@@ -126,11 +116,10 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="TechildDBEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="TechildDBEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Lessons" EntityType="Self.Lessons" />
     <EntitySet Name="Progress" EntityType="Self.Progress" />
     <EntitySet Name="Subjects" EntityType="Self.Subjects" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
     <EntitySet Name="Tests" EntityType="Self.Tests" />
     <EntitySet Name="Users" EntityType="Self.Users" />
     <AssociationSet Name="FK_Lessons_Subjects" Association="Self.FK_Lessons_Subjects">

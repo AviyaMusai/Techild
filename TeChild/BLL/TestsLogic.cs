@@ -9,7 +9,7 @@ namespace BLL
 {
   public  class TestsLogic
     {
-        public static DAL.TechildDBEntities db = new DAL.TechildDBEntities();
+        public static DAL.TechildDBEntities1 db = new DAL.TechildDBEntities1();
         public static List<TestsDto> GetAllTest()
         {
             List<TestsDto> t = new List<TestsDto>();
