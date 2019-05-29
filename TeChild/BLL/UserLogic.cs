@@ -48,11 +48,13 @@ namespace BLL
             return false;
         }
         //בעת רישום בדיקה האם השדות ריקים
-        public static bool IsEmptyInSignUp(string mail, string name)
+        public static /*bool*/ void IsEmptyInSignUp(/*string mail, string name*/)
         {
-            if (mail != null && name != null)
-                return true;
-            return false;
+            mail x = new BLL.mail();
+                x.sendmail();
+            //if (mail != null && name != null)
+            //    return true;
+            //return false;
         }
         //בעת כניסה בדיקה האם האם השדות ריקים
         public static bool IsEmptyInSignIn(string password, string name)

@@ -33,6 +33,8 @@
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +46,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Class2.cs" />
     <Compile Include="LessonsLogic.cs" />
+    <Compile Include="mail.cs" />
     <Compile Include="ProgressLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SubjectLogic.cs" />
