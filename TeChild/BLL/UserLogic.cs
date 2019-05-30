@@ -10,6 +10,7 @@ namespace BLL
     public class UserLogic
     {
         public static DAL.TechildDBEntities1 db = new DAL.TechildDBEntities1();
+        
         //החזרת רשימת כל המשתמשים
         public static List<UsersDto> GetAllUsers()
         {
@@ -48,13 +49,17 @@ namespace BLL
             return false;
         }
         //בעת רישום בדיקה האם השדות ריקים
-        public static /*bool*/ void IsEmptyInSignUp(/*string mail, string name*/)
+        public static bool IsEmptyInSignUp(string mail, string name)
+        {
+            if (mail != null && name != null)
+                return true;
+            return false;
+        }
+        //שליחת סיסמה למשתמש חדש 
+        public static void sendMailToNewUser(string m)
         {
             mail x = new BLL.mail();
-                x.sendmail();
-            //if (mail != null && name != null)
-            //    return true;
-            //return false;
+            x.sendmail(m);
         }
         //בעת כניסה בדיקה האם האם השדות ריקים
         public static bool IsEmptyInSignIn(string password, string name)
