@@ -27,8 +27,8 @@ namespace DAL
         public int IsConnect { get; set; }
         public int lessonAndSubjectId { get; set; }
     
-        public virtual Lessons Lessons { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Progress> Progress { get; set; }
+        public virtual Lessons Lessons { get; set; }
     }
 }

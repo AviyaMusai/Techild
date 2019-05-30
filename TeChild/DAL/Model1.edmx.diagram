@@ -5,16 +5,16 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="3556dcc0ed564bc3895f47b4fcb3a960" Name="Diagram1">
-        <EntityTypeShape EntityType="TechildDBModel.Lessons" Width="1.5" PointX="2.75" PointY="6" IsExpanded="true" />
         <EntityTypeShape EntityType="TechildDBModel.Progress" Width="1.5" PointX="7.75" PointY="5.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="TechildDBModel.Subjects" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="TechildDBModel.Tests" Width="1.5" PointX="5" PointY="4.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="TechildDBModel.Users" Width="1.5" PointX="5.25" PointY="8" IsExpanded="true" />
-        <AssociationConnector Association="TechildDBModel.FK_Lessons_Subjects" ManuallyRouted="false" />
-        <AssociationConnector Association="TechildDBModel.FK_Progress_Lessons" ManuallyRouted="false" />
-        <AssociationConnector Association="TechildDBModel.FK_Tests_Lessons" ManuallyRouted="false" />
-        <AssociationConnector Association="TechildDBModel.FK_Users_Lessons" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="TechildDBModel.Users" Width="1.5" PointX="5" PointY="6.5" IsExpanded="true" />
         <AssociationConnector Association="TechildDBModel.FK_Progress_Users" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="TechildDBModel.Subjects" Width="1.5" PointX="1" PointY="4.125" />
+        <EntityTypeShape EntityType="TechildDBModel.Lessons" Width="1.5" PointX="3.25" PointY="2.5" />
+        <EntityTypeShape EntityType="TechildDBModel.Tests" Width="1.5" PointX="5.5" PointY="2.875" />
+        <AssociationConnector Association="TechildDBModel.FK_Lessons_Subjects" />
+        <AssociationConnector Association="TechildDBModel.FK_Progress_Lessons" />
+        <AssociationConnector Association="TechildDBModel.FK_Tests_Lessons" />
+        <AssociationConnector Association="TechildDBModel.FK_Users_Lessons" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

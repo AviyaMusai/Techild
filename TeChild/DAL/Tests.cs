@@ -17,6 +17,7 @@ namespace DAL
         public int id { get; set; }
         public int lessonAndSubjectId { get; set; }
         public string testFile { get; set; }
+        public string answer { get; set; }
     
         public virtual Lessons Lessons { get; set; }
     }

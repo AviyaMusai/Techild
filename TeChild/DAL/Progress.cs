@@ -20,7 +20,7 @@ namespace DAL
         public int isPass { get; set; }
         public int mark { get; set; }
     
-        public virtual Lessons Lessons { get; set; }
         public virtual Users Users { get; set; }
+        public virtual Lessons Lessons { get; set; }
     }
 }
