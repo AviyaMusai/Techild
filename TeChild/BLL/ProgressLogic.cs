@@ -25,17 +25,12 @@ namespace BLL
         //החזרת ההתקדמויות של נושא מסוים למשתמש מסוים לפי קוד נושא וקוד משתמש
         public static List<ProgressDto> GetProgressByUserIdAndSubjectid(int userId,int subId)
         {
-            List<ProgressDto> p = new List<ProgressDto>();
-            var progress = from pro in db.Progress join m in db.Lessons
-                           on pro.lessonAndSubjectId equals m.id                   
-                           where pro.userId == userId &&
-                           m.subjectId==subId
-                           select pro;
-            foreach (var item in progress)
+			List<ProgressDto> pp = new List<ProgressDto>();
+            foreach (var item in db.Progress.Where(p => p.userId == userId && p.Lessons.subjectId == subId).ToList())
             {
-                p.Add(Dto.ProgressDto.ConvertDBToDto(item));
+                pp.Add(Dto.ProgressDto.ConvertDBToDto(item));
             }
-            return p;
+            return pp;
         }
     }
 }
